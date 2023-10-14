@@ -1,20 +1,33 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Style from '../Style/style.module.css'
+import Style from '../Style/style.module.css';
 import { Link } from 'react-router-dom';
 
 const CardItem = ( { item } ) => {
     return (
-        <Card className= {Style.card}> 
-            <Card.Img src= {item.image} className={Style.img} />
-            <Card.Body>
-                <Card.Title className={Style.title}>{item.title}</Card.Title>
+        <div className= {Style.card}>
+                <img src={item.img} alt="" />
+            <div>
+                <h4>{item.nombre}</h4>
+                <p>{item.descripcion}</p>
+                <p>$ {item.precio}</p>
+                <Link to={`/Detalle/${item.id}`}>
+                    <Button>+ Info</Button>
+                </Link>
+            </div>
+        </div>
+        /*<Card> 
+            <Card.Img src= {item.imgA} className={Style.img} />
+            <Card.Body className= {Style.card}>
+                <Card.Title className={Style.title}>{item.nombre}</Card.Title>
+                <Card.Text className={Style.title}>{item.descripcion}</Card.Text>
+                <Card.Text className={Style.title}>{item.precio}</Card.Text>
                 <Link to={`/Detalle/${item.id}`}>
                     <Button className={Style.buttom}>+ Info</Button>
                 </Link>
             </Card.Body>
-        </Card>
+        </Card>*/
     )
 }
 export default CardItem

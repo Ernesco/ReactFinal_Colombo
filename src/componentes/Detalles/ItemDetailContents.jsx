@@ -10,13 +10,15 @@ const ItemDetailContents = ( { id } ) => {
     useEffect( () => {
 
         const db = getFirestore()
-            const itemRef = doc( db, "items", "32EhHNAd9zb6oJhyaBo7" )
+            const itemRef = doc( db, "items", id )
             
             getDoc(itemRef)
                 .then( ( snapshot) => {
-                    console.log(snapshot.exists())
                         if (snapshot.exists()){
-                            setItem(snapshot.data())
+                            setItem({
+                                id: snapshot.id,
+                                ...snapshot.data()
+                            })
                         }
                     })
                 .catch((err) => console.log(err))
