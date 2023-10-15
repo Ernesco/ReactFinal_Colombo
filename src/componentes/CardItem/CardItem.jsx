@@ -7,13 +7,13 @@ import { Link } from 'react-router-dom';
 const CardItem = ( { item } ) => {
     return (
         <div className= {Style.card}>
-                <img src={item.img} alt="" />
-            <div>
+                <img src={item.img} alt="" className={Style.imghome}/>
+            <div className={Style.cardInterior}>
                 <h4>{item.nombre}</h4>
                 <p>{item.descripcion}</p>
                 <p>$ {item.precio}</p>
                 <Link to={`/Detalle/${item.id}`}>
-                    <Button>+ Info</Button>
+                    <Button className={Style.boton}>+ Info</Button>
                 </Link>
             </div>
         </div>

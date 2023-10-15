@@ -5,9 +5,6 @@ import style from "./componentes/Style/style.module.css"
 import Rutas from "./componentes/Rutas/Rutas"
 import Footer from "./componentes/Footer/Footer"
 
-
-
-
 const App = () =>{
 
   return (
