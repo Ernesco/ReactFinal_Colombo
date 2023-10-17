@@ -10,11 +10,17 @@ const ItemDetail = ( { item } ) => {
                 <img src={item.img} alt="" className={Style.imgdetail}/>
             <div className={Style.cardetailint}>
                 <h4>{item.nombre}</h4>
-                <p>{item.descripcion}</p>
-                <p>$ {item.precio}</p>
+                <p>Descripción: {item.descripcion}</p>
+                <p>{item.articulo}</p>
+                <p><strong>Medidas:</strong> {item.medidas}</p>
+                <p>{item.med}</p>
+            </div>
+            <div className={Style.agregar}>
+                <p className={Style.precio}><strong>${item.precio}</strong></p>
+                <p>Unidades disponibles: <strong>{item.stock}</strong></p>
                 <ContContenedor />
                 <Link to={`/Detalle/${item.id}`}>
-                    <Button className={Style.boton}>Agregar al Carrito</Button>
+                    <Button variant="dark" className={Style.botondetail}>Agregar al Carrito</Button>
                 </Link>
             </div>
         </div>

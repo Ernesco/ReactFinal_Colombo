@@ -10,10 +10,9 @@ const CardItem = ( { item } ) => {
                 <img src={item.img} alt="" className={Style.imghome}/>
             <div className={Style.cardInterior}>
                 <h4>{item.nombre}</h4>
-                <p>{item.descripcion}</p>
-                <p>$ {item.precio}</p>
+                <p className={Style.precio}><strong>$ {item.precio}</strong></p>
                 <Link to={`/Detalle/${item.id}`}>
-                    <Button className={Style.boton}>+ Info</Button>
+                    <Button variant="dark" className={Style.boton}>+ Info</Button>
                 </Link>
             </div>
         </div>

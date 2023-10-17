@@ -14,7 +14,7 @@
     text-align: center;
     flex-direction: column;
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     background-size: cover;
     margin-bottom: 50px;
     margin-top: 50px;
@@ -36,15 +36,17 @@
 }
 .cardInterior{
     display: flex;
+    width: 250px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
 .boton{
-    width: 200px;
+    width: 100px;
     background-color: black;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .cardetail{
     background-color: rgb(255, 255, 255);
@@ -58,10 +60,63 @@
 }
 .cardetailint{
     display: flex;
+    width: 300px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
+}
+.botondetail{
+    display: flex;
+    margin-top: 100px;
+}
+.agregar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px rgb(213, 213, 213);
+    padding: 30px;
+}
+.precio{
+    font-size: 25px;
+}
+.guia{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1000px;
+    height: 600px;
+    box-shadow: 0 0 0 3px #ffffff;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.navguia{
+    width: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+.glosario{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+.nosotros{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 900px;
+    height: 300px;
+    box-shadow: 0 0 0 3px #ffffff;
+    margin-bottom: 50px;
+    border-radius: 10px;
 }
 /*.titledetail{
     display: flex;
@@ -102,8 +157,6 @@
     color: white;
     background-color: black;
 }
-
-
 .activo{
     color:darkred;
 }

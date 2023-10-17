@@ -19,13 +19,13 @@ const Navb = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll>
                         <NavLink className={Style.Navtext} to='/'>Inicio</NavLink>
-                        <NavLink className={Style.Navtext} to='/Contacto'>Contacto</NavLink>
+                        <NavLink className={Style.Navtext} to='/Guia'>Guia de consultas</NavLink>
                         <NavLink className={Style.Navtext} to='/Nosotros'>Nosotros</NavLink>
                         <NavDropdown to="/categories" title="Categories" id="basic-nav-dropdown" active>
-                            <NavDropdown.Item as={NavLink} to="/categories/electronics">Electronics</NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to="/categories/jewelery">Jewelry</NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to="/categories/men's clothing">Men's clothing</NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to="/categories/women's clothing">Women's clothing</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/categories/electronics">Sabanas</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/categories/jewelery">Cover</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/categories/men's clothing">Frazadas</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/categories/women's clothing">Acolchados</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
