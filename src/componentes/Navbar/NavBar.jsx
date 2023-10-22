@@ -21,11 +21,11 @@ const Navb = () => {
                         <NavLink className={Style.Navtext} to='/'>Inicio</NavLink>
                         <NavLink className={Style.Navtext} to='/Guia'>Guia de consultas</NavLink>
                         <NavLink className={Style.Navtext} to='/Nosotros'>Nosotros</NavLink>
-                        <NavDropdown to="/categories" title="Categories" id="basic-nav-dropdown" active>
-                            <NavDropdown.Item as={NavLink} to="/categories/electronics">Sabanas</NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to="/categories/jewelery">Cover</NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to="/categories/men's clothing">Frazadas</NavDropdown.Item>
-                            <NavDropdown.Item as={NavLink} to="/categories/women's clothing">Acolchados</NavDropdown.Item>
+                        <NavDropdown to="/categoria" title="Categorias" id="basic-nav-dropdown" active>
+                            <NavDropdown.Item as={NavLink} to="/categoria/sabanas">Sabanas</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/categoria/cover">Cover</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/categoria/frazadas">Frazadas</NavDropdown.Item>
+                            <NavDropdown.Item as={NavLink} to="/categoria/acolchado">Acolchados</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>

@@ -4,17 +4,18 @@ import Pagetitle from "./componentes/PageTitle/Pagetitle"
 import style from "./componentes/Style/style.module.css"
 import Rutas from "./componentes/Rutas/Rutas"
 import Footer from "./componentes/Footer/Footer"
+import CartContextProvider from "./componentes/Contex/CartContextProvider"
 
-const App = () =>{
+const App = () => {
 
   return (
     <div className={style.body}>
-      <Navb/>
-      <Pagetitle/>
-      <Rutas />
-      <footer>
-        <Footer/>
-      </footer>
+      <CartContextProvider>
+        <Navb />
+        <Pagetitle />
+        <Rutas />
+        <Footer />
+      </CartContextProvider>
     </div>
   )
 }

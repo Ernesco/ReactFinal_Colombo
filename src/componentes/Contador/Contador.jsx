@@ -1,15 +1,20 @@
 import React from 'react'
 import Style from '../Style/style.module.css'
+import { Button } from 'react-bootstrap'
 
-const Contador = ({count, sumar, restar, text}) => {
+const Contador = ({onAdd, count, sumar, restar}) => {
     
     return (
         <div>
-            <p className={Style.pricedetail}> Cantidad: { count }</p>
-            <p className={Style.Descrpdetail}>{ text }</p>
-            <button onClick = { sumar } className={Style.buttomcont}> Agregar </button>
-            <button onClick = { restar } className={Style.buttomcont}> Quitar </button>
-        </div>    )
+            <div className={Style.contador}>
+                <button onClick = { restar } className={Style.buttomcont2}> - </button> 
+                <p className={Style.pricedetail}>{ count }</p>
+                <button onClick = { sumar } className={Style.buttomcont1}> + </button>
+                
+            </div>
+            <Button onClick={() => onAdd(count)} variant="dark" className={Style.botondetail}>Agregar al Carrito</Button>
+        </div>
+    )
 }
 
 export default Contador

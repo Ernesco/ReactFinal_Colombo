@@ -5,6 +5,8 @@ import Categoria from '../../pages/Categoria'
 import { Route, Routes } from 'react-router-dom'
 import Nosotros from '../../pages/Nosotros'
 import GuiaDeConsultas from '../../pages/Guia'
+import Carrito from '../../pages/Carrito'
+import Checkout from '../../pages/Checkout'
 
 const Rutas = () => {
     return (
@@ -14,8 +16,9 @@ const Rutas = () => {
                 <Route path='/Nosotros' element = {<Nosotros/>}/>
                 <Route path='/Guia' element = {<GuiaDeConsultas/>} />
                 <Route path='/Detalle/:id' element={<Detalle />} />
-                <Route path="/categories" element={<Categoria />} />
-                <Route path="/categories/:category" element={<Categoria />} />
+                <Route path="/categoria/:categoria" element={<Categoria />} />
+                <Route path="/carrito" element={<Carrito/>}></Route>
+                <Route path="/checkout/:orderId" element={<Checkout/>}></Route>
             </Routes>
         </div>
     )

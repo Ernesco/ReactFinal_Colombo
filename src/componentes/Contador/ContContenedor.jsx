@@ -1,23 +1,28 @@
 import React, { useState } from 'react'
 import Contador from './Contador'
 
-const ContContenedor = () => {
+const ContContenedor = ({onAdd}) => {
 
-    const [count, setCount] = useState(0)
-    const [text, setText] = useState("carrito")
+    const [count, setCount] = useState(1)
 
     const sumar = () => { 
-        setText ("Ingresado")
-        setCount (count + 1) 
+        if(count === 10){
+            setCount (10) 
+        }else{
+            setCount(count + 1)
         }
+    }
     const restar = () => { 
-        setText ("Quitado")
-        setCount(count - 1)
+        if(count >= 1){
+            setCount(count - 1)
+        }else{
+            setCount(0)
         }
+    }
 
 
     return (
-        <Contador count={count} sumar={sumar} restar={restar} text={text}/>
+        <Contador count={count} sumar={sumar} restar={restar} onAdd={onAdd}/>
     )
 }
 
