@@ -6,7 +6,7 @@ import Style from '.././componentes/Style/Style.module.css';
 const Checkout = () => {
         const { orderId } = useParams()
     return (
-        <div>
+        <div className={Style.check}>
             <p>¡Gracias por su compra!</p>
             <p>Tu numero de orden es: <strong>{orderId}</strong></p>
             <p>en las proximas <strong>24 horas</strong> nos pondremos en contacto para coordinar la entrega</p>

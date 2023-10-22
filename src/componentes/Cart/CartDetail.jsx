@@ -41,35 +41,19 @@ const CartDetail = () => {
         })
     }
     return (
-        <div>
-            {
-                cart.map(el => (
-                    <div>
-                        <div className={Style.cardcarrito}>
-                            <p>{el.item.nombre}</p>
-                            <img src={el.item.img} alt="" />
-                            <p>Medida: {el.item.medidas}</p>
-                            <p>Cantidad: {el.quantity}</p>
-                            <p>Precio Unit: ${el.item.precio}</p>
-                            <p>Precio total: $ {el.item.precio * el.quantity}</p>
-                            <Button onClick={() => removeItem(el.item.id)}> eliminar </Button>
-                        </div>
-                    </div>
-                ))
-            }
-
+        <div className={Style.carritofinal}>
             {
                 cart.length > 0 ?
-                    <div>
+                <div className={Style.compra}>
                         <h2>Precio Total: ${totalPrice()}</h2>
-                        <button onClick={handleVaciar} >Vaciar Carrito</button>
-                        <Button onClick={() => addToCart()} variant="dark" className={Style.boton}> Finalizar Compra </Button>
+                        <Button onClick={() => clear()} variant="dark" className={Style.boton2}>Vaciar Carrito</Button>
                         <label htmlFor="name">Ingrese su Nombre</label>
                         <input onChange={handleChange} name="name" id="name" value={buyer.name} />
                         <label htmlFor="email">Ingresa tu email</label>
                         <input onChange={handleChange} name="email" id="email" value={buyer.email} />
                         <label htmlFor="telefono">Ingresa tu numero de contacto</label>
                         <input onChange={handleChange} name="number" id="number" value={buyer.number} />
+                        <Button onClick={() => addToCart()} variant="dark" className={Style.boton1}> Finalizar Compra </Button>
                     </div> :
                     <div className={Style.cartvacio}>
                         <h2>Carrito Vacio...</h2>
@@ -77,6 +61,23 @@ const CartDetail = () => {
                         <h3>Parece que aún no has seleccionado ningun articulo...</h3>
                         <Link to="/"><Button variant="dark" className={Style.boton}>Iniciar Compras</Button></Link>
                     </div>
+            }
+            {
+                cart.map(el => (
+                    <div>
+                        <div className={Style.cardcarrito}>
+                            <img src={el.item.img} alt="" />
+                            <div className={Style.carrdetalle}>
+                                <p>{el.item.nombre}</p>
+                                <p>Medida: {el.item.medidas}</p>
+                                <p>Cantidad: {el.quantity}</p>
+                                <p>Precio Unit: ${el.item.precio}</p>
+                                <p>Precio total: $ {el.item.precio * el.quantity}</p>
+                                <Button onClick={() => removeItem(el.item.id)}> eliminar </Button>
+                            </div>
+                        </div>
+                    </div>
+                ))
             }
         </div>
     )
