@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 import { Link, useParams } from 'react-router-dom'
-import Style from '.././componentes/Style/Style.module.css';
+import Style from '.././componentes/Style/style.module.css';
 
 const Checkout = () => {
         const { orderId } = useParams()

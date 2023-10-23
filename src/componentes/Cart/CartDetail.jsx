@@ -12,9 +12,6 @@ const CartDetail = () => {
         number: ""
     })
     const { cart, removeItem, clear, totalPrice } = useContext(CartContext)
-    const handleVaciar = () => {
-        clear();
-    }
     const navigate = useNavigate()
     const addToCart = () => {
 

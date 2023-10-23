@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
 import ItemDetail from './ItemDetail'
-import useFetch from '../Hooks/useFetch'
 import {doc, getDoc, getFirestore} from "firebase/firestore"
 import CartContext from '../Contex/CartContex'
 

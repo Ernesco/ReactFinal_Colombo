@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CardWidget from './CardWidget';
 import { Link, NavLink } from 'react-router-dom';
-import Style from '../style/style.module.css'
+import Style from '../Style/style.module.css'
 
 const Navb = () => {
     return (
