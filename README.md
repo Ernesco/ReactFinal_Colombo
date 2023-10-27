@@ -1,8 +1,20 @@
-# React + Vite
+# Proyecto final Curso React JS Com. 47195
+## Profesor Franco Diosquez - Tutor Ezequiel Ramirez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+mediante la enseñansa aprendida en el curso de React Js se realiza una app dedicada a la venta de proctos de Blanqueria.
 
-Currently, two official plugins are available:
+**Funcionalidades de la app**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Catálogo de Productos
+- Carrito de Compras
+- Categorías de Productos
+- Detalles del Producto
+- Compra
+- Datos del Comprador:
+- Almacenamiento en Firebase.
+
+[Enlace a la pagina](https://umablanqueria.netlify.app/ "Enlace a la pagina")
+
+A lo largo del proyecto se fue adaptando el e-commerce para poder lograr una pagina acorde a las enseñanzas, con las correcciones del tutor se fueron corrigiendo los errores y lograr obtener el resultado que se presenta como proyecto final.
+
+Ernesto Colombo.
